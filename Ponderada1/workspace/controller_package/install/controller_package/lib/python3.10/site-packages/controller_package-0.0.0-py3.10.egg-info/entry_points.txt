@@ -1,0 +1,4 @@
+[console_scripts]
+set_pose = controller_package.set_pose:main
+waypoint = controller_package.waypoint:main
+
