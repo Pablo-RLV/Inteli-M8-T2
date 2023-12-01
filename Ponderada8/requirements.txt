@@ -1,0 +1,2 @@
+openai-whisper
+openai==0.28
