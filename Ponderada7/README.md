@@ -9,13 +9,13 @@ O projeto consiste em classificar imagens de dígitos manuscritos em 10 classes 
 A rede neural convolucional apresenta a seguinte arquitetura:
 
 ## Camada Flatten:
-    Essa camada serve para transformar os dados de entrada em um formato unidimensional. Em redes neurais convolucionais (CNNs), a entrada geralmente é uma matriz multidimensional (como uma imagem). A camada Flatten converte essa matriz em um vetor unidimensional para ser processado pelas camadas subsequentes.
+Essa camada serve para transformar os dados de entrada em um formato unidimensional. Em redes neurais convolucionais (CNNs), a entrada geralmente é uma matriz multidimensional (como uma imagem). A camada Flatten converte essa matriz em um vetor unidimensional para ser processado pelas camadas subsequentes.
 
 ## Camadas Dense (Densamente Conectadas):
-    Três camadas Dense seguidas são adicionadas após a camada Flatten. Cada camada Dense possui 128 neurônios (ou unidades) com função de ativação ReLU (Rectified Linear Unit). Isso significa que cada neurônio nessas camadas está conectado a todos os neurônios da camada anterior. A função de ativação ReLU (Rectified Linear Unit) introduz não linearidade na rede, ajudando-a a aprender relações mais complexas nos dados.
+Três camadas Dense seguidas são adicionadas após a camada Flatten. Cada camada Dense possui 128 neurônios (ou unidades) com função de ativação ReLU (Rectified Linear Unit). Isso significa que cada neurônio nessas camadas está conectado a todos os neurônios da camada anterior. A função de ativação ReLU (Rectified Linear Unit) introduz não linearidade na rede, ajudando-a a aprender relações mais complexas nos dados.
 
 ## Camada de Saída (Dense com ativação Softmax):
-    A última camada Dense tem 10 neurônios, indicando que essa rede é utilizada para classificação em 10 classes diferentes (nesse caso, reconhecer os dígitos de 0 a 9). A função de ativação Softmax é usada na camada de saída para atribuir probabilidades às diferentes classes. Ela garante que a soma das saídas para todas as classes seja igual a 1, permitindo que a saída seja interpretada como probabilidades.
+A última camada Dense tem 10 neurônios, indicando que essa rede é utilizada para classificação em 10 classes diferentes (nesse caso, reconhecer os dígitos de 0 a 9). A função de ativação Softmax é usada na camada de saída para atribuir probabilidades às diferentes classes. Ela garante que a soma das saídas para todas as classes seja igual a 1, permitindo que a saída seja interpretada como probabilidades.
 
 Essa arquitetura é uma rede neural básica com várias camadas densamente conectadas, usada principalmente para tarefas de classificação. Ela recebe dados unidimensionais após a camada Flatten, processa esses dados através de três camadas escondidas com ativação ReLU e gera probabilidades de pertencer a cada uma das 10 classes possíveis na camada de saída, usando a ativação Softmax.
 
